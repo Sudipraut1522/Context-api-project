@@ -1,0 +1,60 @@
+.topul {
+  display: flex;
+  justify-content: space-around;
+}
+.topul li {
+  position: relative;
+}
+
+.topul li:hover ul {
+  display: block;
+  background-color: black;
+  color: white;
+}
+
+.topul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+p {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.buttonul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.buttonul li {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid orange;
+  width: 10rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+  .topul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .topul li {
+    width: 80%;
+    border-bottom: 1px solid orange;
+  }
+  .buttonul {
+    width: 100%;
+  }
+}
