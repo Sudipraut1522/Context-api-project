@@ -14,7 +14,7 @@ const Navbar = () => {
         <ul className={style.buttonul}>
           <li
             onClick={() =>
-              navigate("/category", { state: { category: "Business" } })
+              navigate("/category", { state: { category: "General" } })
             }
           >
             Business
@@ -28,17 +28,24 @@ const Navbar = () => {
           </li>
           <li
             onClick={() =>
-              navigate("/category", { state: { category: "Business" } })
+              navigate("/category", { state: { category: "Health" } })
             }
           >
             Health
           </li>
           <li
             onClick={() =>
-              navigate("/category", { state: { category: "Business" } })
+              navigate("/category", { state: { category: "Science" } })
             }
           >
             Science
+          </li>
+          <li
+            onClick={() =>
+              navigate("/category", { state: { category: "Sport" } })
+            }
+          >
+            Sport
           </li>
         </ul>
       </li>
